@@ -1,0 +1,5 @@
+. : radarr, sonarr, qbittorrent, jellyseerr, jackett
+
+autre docker-compose.yml
+FlareSolverr (appdata/Fla...)
+photo prism (appdata/photoprism)

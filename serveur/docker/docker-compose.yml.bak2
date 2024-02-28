@@ -1,0 +1,19 @@
+version: "2.4"
+
+services:
+  radarr:
+    image: ghcr.io/hotio/radarr
+    container_name: radarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Paris
+    volumes:
+      - /home/jack/docker/appdata/radarr:/config
+      - /mnt/link/downloads:/downloads
+      - /mnt/HDD1/media/films:/films1
+      - /mnt/HDD2/media/films:/films2
+      - /mnt/HDD3/media/films:/films3
+    ports:
+      - 7878:7878
+    restart: unless-stopped
